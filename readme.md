@@ -36,7 +36,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.name.mazgalov:gradle-sass-vaadin-compiler:0.1.0"
+    classpath "gradle.plugin.name.mazgalov:gradle-sass-vaadin-compiler:0.1.1"
   }
 }
 ```
