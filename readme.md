@@ -30,11 +30,11 @@ task cssGeneration (type: CompileSass) {
 
 The task allows more sophisticated configuration with the following properties:
 
-* scssFile (mandatory) - the file from which will be generated CSS
-* cssFile (mandatory) - output CSS file
-* sassCompilerConfiguration (optional) - a custom Gradle configuration can be used, if such is not specified, will be used default one created by the plugin
-* vaadinSassCompilerVersion (optional) - can be specified a custom Vaadin SASS compiler version, if such is missing, will be used latest.milestone
-* vaadinThemesVersion (optional) - can be specified a custom Vaadin Themes version, if such is missing, will be used latest.milestone. It will be placed on the classpath of the compiler allowing to use the default themes provided by Vaadin during the compilation.
+* `scssFile` (mandatory) - the file from which will be generated CSS
+* `cssFile` (mandatory) - output CSS file
+* `sassCompilerConfiguration` (optional) - a custom Gradle configuration can be used, if such is not specified, will be used default one created by the plugin
+* `vaadinSassCompilerVersion` (optional) - can be specified a custom Vaadin SASS compiler version, if such is missing, will be used latest.milestone
+* `vaadinThemesVersion` (optional) - can be specified a custom Vaadin Themes version, if such is missing, will be used latest.milestone. It will be placed on the classpath of the compiler allowing to use the default themes provided by Vaadin during the compilation.
 
 Example:
 
