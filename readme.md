@@ -63,4 +63,4 @@ task cssGeneration (type: CompileSass) {
 
 ##Helpful links
 
-For more information about Vaadin SASS compilation: [Vaadin Themes Comiling](https://vaadin.com/docs/-/part/framework/themes/themes-compiling.html)
+For more information about Vaadin SASS compilation: [Vaadin Themes Compiling](https://vaadin.com/docs/-/part/framework/themes/themes-compiling.html)
