@@ -3,3 +3,24 @@ apply plugin: 'groovy'
 dependencies {
     compile gradleApi()
 }
+
+// Publishing
+apply plugin: 'ivy-publish'
+
+publishing {
+    repositories {
+        ivy {
+            url "${System.getProperty('user.home')}/.gradle/local-repo"
+        }
+    }
+    publications {
+        ivy(IvyPublication) {
+            organisation 'name.mazgalov'
+            module 'vaadin-sass-compiler'
+            revision '0.1.0'
+            descriptor.status = 'milestone'
+
+            from components.java
+        }
+    }
+}
