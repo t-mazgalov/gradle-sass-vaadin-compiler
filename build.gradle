@@ -5,22 +5,32 @@ dependencies {
 }
 
 // Publishing
-apply plugin: 'ivy-publish'
+apply plugin: 'com.gradle.plugin-publish'
 
-publishing {
-    repositories {
-        ivy {
-            url "${System.getProperty('user.home')}/.gradle/local-repo"
+version = '0.1.0'
+group = 'name.mazgalov'
+
+pluginBundle {
+    website = 'http://mazgalov.name/'
+    vcsUrl = 'https://github.com/t-mazgalov/gradle-sass-vaadin-compiler'
+    description = 'Vaadin SASS compiler plugin'
+    tags = ['vaadin', 'sass', 'sass compiler', 'sass plugin', 'vaadin sass']
+
+    plugins {
+        greetingsPlugin {
+            id = 'name.mazgalov.vaadin.sass.compiler'
+            displayName = 'Vaadin SASS compiler plugin'
         }
     }
-    publications {
-        ivy(IvyPublication) {
-            organisation 'name.mazgalov'
-            module 'vaadin-sass-compiler'
-            revision '0.1.0'
-            descriptor.status = 'milestone'
+}
 
-            from components.java
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
         }
+    }
+    dependencies {
+        classpath "com.gradle.publish:plugin-publish-plugin:0.9.5"
     }
 }
