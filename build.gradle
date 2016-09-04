@@ -17,7 +17,7 @@ pluginBundle {
     tags = ['vaadin', 'sass', 'sass compiler', 'sass plugin', 'vaadin sass']
 
     plugins {
-        greetingsPlugin {
+        vaadinSassCompilerPlugin {
             id = 'name.mazgalov.vaadin.sass.compiler'
             displayName = 'Vaadin SASS compiler plugin'
         }
