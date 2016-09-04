@@ -5,7 +5,7 @@
 When the plugin is applied, it creates a task which can be used to compile required SASS file.
 
 ```
-apply plugin: 'vaadin-sass-compiler'
+apply plugin: 'name.mazgalov.vaadin.sass.compiler'
 
 compileSass {
     scssFile = '...'
@@ -16,7 +16,7 @@ compileSass {
 Custom task definition of type `CompileSass` can be used as well.
 
 ```
-apply plugin: 'vaadin-sass-compiler'
+apply plugin: 'name.mazgalov.vaadin.sass.compiler'
 
 import name.mazgalov.vaadin.sass.compiler.task.CompileSass
 
@@ -39,7 +39,7 @@ The task allows more sophisticated configuration with the following properties:
 Example:
 
 ```
-apply plugin: 'vaadin-sass-compiler'
+apply plugin: 'name.mazgalov.vaadin.sass.compiler'
 
 import name.mazgalov.vaadin.sass.compiler.task.CompileSass
 
