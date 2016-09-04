@@ -26,6 +26,21 @@ task cssGeneration (type: CompileSass) {
 }
 ```
 
+The plugin can be directly from the Gradle plugins portal:
+
+```
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.name.mazgalov:gradle-sass-vaadin-compiler:0.1.0"
+  }
+}
+```
+
 ##Compilation task configuration
 
 The task allows more sophisticated configuration with the following properties:
