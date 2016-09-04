@@ -7,14 +7,14 @@ import org.gradle.api.tasks.Optional
 import org.gradle.api.tasks.TaskAction
 
 /**
- * Created by todor on 04-Sep-16.
+ * Created by Todor Mazgalov
  */
 class CompileSass extends JavaExec{
     @Input
-    def scssInputFile
+    def scssFile
 
     @Input
-    def cssOutputFile
+    def cssFile
 
     @Input
     @Optional
@@ -47,7 +47,7 @@ class CompileSass extends JavaExec{
 
         main = 'com.vaadin.sass.SassCompiler'
         classpath = sassCompilerConfiguration
-        args scssInputFile, cssOutputFile
+        args scssFile, cssFile
 
         super.exec()
     }
