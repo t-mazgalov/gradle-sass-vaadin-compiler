@@ -1,8 +1,6 @@
 package name.mazgalov.vaadin.sass.compiler.task
 
-import org.gradle.api.GradleException
 import org.gradle.api.artifacts.Configuration
-import org.gradle.api.internal.tasks.options.Option
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.JavaExec
 import org.gradle.api.tasks.Optional
