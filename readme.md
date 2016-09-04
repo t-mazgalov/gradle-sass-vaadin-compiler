@@ -28,7 +28,7 @@ task cssGeneration (type: CompileSass) {
 
 ##Compilation task configuration
 
-The task allows more sofisticated configuration with the following properties:
+The task allows more sophisticated configuration with the following properties:
 
 * scssFile (mandatory) - the file from which will be generated CSS
 * cssFile (mandatory) - output CSS file
