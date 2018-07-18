@@ -8,8 +8,8 @@ When the plugin is applied, it creates a task which can be used to compile requi
 apply plugin: 'name.mazgalov.vaadin.sass.compiler'
 
 compileSass {
-    scssFile = '...'
-    cssFile = '...'
+    scssFile = file '...'
+    cssFile = file '...'
 }
 ```
 
@@ -21,8 +21,8 @@ apply plugin: 'name.mazgalov.vaadin.sass.compiler'
 import name.mazgalov.vaadin.sass.compiler.task.CompileSass
 
 task cssGeneration (type: CompileSass) {
-    scssFile = '...'
-    cssFile = '...'
+    scssFile = file '...'
+    cssFile = file '...'
 }
 ```
 
@@ -68,8 +68,8 @@ dependencies {
 }
 
 task cssGeneration (type: CompileSass) {
-    scssFile = '...'
-    cssFile = '...'
+    scssFile = file '...'
+    cssFile = file '...'
     sassCompilerConfiguration = customSassCompilerConfiguration
     vaadinSassCompilerVersion = '1.0.0'
     vaadinThemesVersion = '7.0.0'
