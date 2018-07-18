@@ -2,18 +2,20 @@ package name.mazgalov.vaadin.sass.compiler.task
 
 import org.gradle.api.artifacts.Configuration
 import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.InputFile
 import org.gradle.api.tasks.JavaExec
 import org.gradle.api.tasks.Optional
+import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 
 /**
  * Created by Todor Mazgalov
  */
 class CompileSass extends JavaExec{
-    @Input
+    @InputFile
     def scssFile
 
-    @Input
+    @OutputFile
     def cssFile
 
     @Input
