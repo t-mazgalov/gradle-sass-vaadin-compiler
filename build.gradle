@@ -7,7 +7,7 @@ dependencies {
 // Publishing
 apply plugin: 'com.gradle.plugin-publish'
 
-version = '0.1.1'
+version = '0.2.1'
 group = 'name.mazgalov'
 
 pluginBundle {
